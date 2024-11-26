@@ -11,7 +11,7 @@ import SwiftUI
 struct HadibuNativeIOSApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ReminderListView()
         }
     }
 }

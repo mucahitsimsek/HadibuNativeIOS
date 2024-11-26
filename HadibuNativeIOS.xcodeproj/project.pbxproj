@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D190389F2CF4B3D500DCC5FB /* ReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D190389E2CF4B3D500DCC5FB /* ReminderView.swift */; };
+		D19038A12CF5AFCA00DCC5FB /* ReminderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19038A02CF5AFCA00DCC5FB /* ReminderExtension.swift */; };
+		D19038A82CF5B2FA00DCC5FB /* ReminderListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19038A72CF5B2FA00DCC5FB /* ReminderListViewModel.swift */; };
 		D1C33A622CE5E17D00C09136 /* HadibuNativeIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C33A612CE5E17D00C09136 /* HadibuNativeIOSApp.swift */; };
-		D1C33A642CE5E17D00C09136 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C33A632CE5E17D00C09136 /* ContentView.swift */; };
+		D1C33A642CE5E17D00C09136 /* ReminderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C33A632CE5E17D00C09136 /* ReminderListView.swift */; };
 		D1C33A662CE5E17E00C09136 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1C33A652CE5E17E00C09136 /* Assets.xcassets */; };
 		D1C33A692CE5E17E00C09136 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1C33A682CE5E17E00C09136 /* Preview Assets.xcassets */; };
+		D1C33A702CE5E96400C09136 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C33A6F2CE5E96400C09136 /* Reminder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D190389E2CF4B3D500DCC5FB /* ReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderView.swift; sourceTree = "<group>"; };
+		D19038A02CF5AFCA00DCC5FB /* ReminderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderExtension.swift; sourceTree = "<group>"; };
+		D19038A72CF5B2FA00DCC5FB /* ReminderListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListViewModel.swift; sourceTree = "<group>"; };
 		D1C33A5E2CE5E17D00C09136 /* HadibuNativeIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HadibuNativeIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1C33A612CE5E17D00C09136 /* HadibuNativeIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HadibuNativeIOSApp.swift; sourceTree = "<group>"; };
-		D1C33A632CE5E17D00C09136 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D1C33A632CE5E17D00C09136 /* ReminderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListView.swift; sourceTree = "<group>"; };
 		D1C33A652CE5E17E00C09136 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1C33A682CE5E17E00C09136 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D1C33A6F2CE5E96400C09136 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +40,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D19038A22CF5B0AB00DCC5FB /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				D19038A32CF5B0BA00DCC5FB /* Reminders */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		D19038A32CF5B0BA00DCC5FB /* Reminders */ = {
+			isa = PBXGroup;
+			children = (
+				D19038A62CF5B0D100DCC5FB /* Views */,
+				D19038A52CF5B0CB00DCC5FB /* ViewModels */,
+				D19038A42CF5B0C300DCC5FB /* Models */,
+			);
+			path = Reminders;
+			sourceTree = "<group>";
+		};
+		D19038A42CF5B0C300DCC5FB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D1C33A6F2CE5E96400C09136 /* Reminder.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D19038A52CF5B0CB00DCC5FB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D19038A72CF5B2FA00DCC5FB /* ReminderListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D19038A62CF5B0D100DCC5FB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D1C33A632CE5E17D00C09136 /* ReminderListView.swift */,
+				D190389E2CF4B3D500DCC5FB /* ReminderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		D1C33A552CE5E17D00C09136 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +102,9 @@
 		D1C33A602CE5E17D00C09136 /* HadibuNativeIOS */ = {
 			isa = PBXGroup;
 			children = (
+				D19038A22CF5B0AB00DCC5FB /* Features */,
+				D1C33A732CE5F2E500C09136 /* Extensions */,
 				D1C33A612CE5E17D00C09136 /* HadibuNativeIOSApp.swift */,
-				D1C33A632CE5E17D00C09136 /* ContentView.swift */,
 				D1C33A652CE5E17E00C09136 /* Assets.xcassets */,
 				D1C33A672CE5E17E00C09136 /* Preview Content */,
 			);
@@ -65,6 +117,14 @@
 				D1C33A682CE5E17E00C09136 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D1C33A732CE5F2E500C09136 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D19038A02CF5AFCA00DCC5FB /* ReminderExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +197,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1C33A642CE5E17D00C09136 /* ContentView.swift in Sources */,
+				D19038A82CF5B2FA00DCC5FB /* ReminderListViewModel.swift in Sources */,
+				D190389F2CF4B3D500DCC5FB /* ReminderView.swift in Sources */,
+				D1C33A702CE5E96400C09136 /* Reminder.swift in Sources */,
+				D1C33A642CE5E17D00C09136 /* ReminderListView.swift in Sources */,
 				D1C33A622CE5E17D00C09136 /* HadibuNativeIOSApp.swift in Sources */,
+				D19038A12CF5AFCA00DCC5FB /* ReminderExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
